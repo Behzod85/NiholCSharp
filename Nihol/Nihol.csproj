@@ -11,6 +11,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="UIImages\Back.png" />
+    <None Remove="UIImages\Background.png" />
+    <None Remove="UIImages\Idle.png" />
+    <None Remove="UIImages\manual.png" />
+    <None Remove="UIImages\next.png" />
+    <None Remove="UIImages\Pause.png" />
+    <None Remove="UIImages\Play.png" />
+    <None Remove="UIImages\reload.png" />
+    <None Remove="UIImages\Sad.png" />
+    <None Remove="UIImages\Smile.png" />
+    <None Remove="UIImages\Stop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="UIImages\back.png" />
+    <EmbeddedResource Include="UIImages\background.png" />
+    <EmbeddedResource Include="UIImages\idle.png" />
+    <EmbeddedResource Include="UIImages\manual.png" />
+    <EmbeddedResource Include="UIImages\next.png" />
+    <EmbeddedResource Include="UIImages\pause.png" />
+    <EmbeddedResource Include="UIImages\play.png" />
+    <EmbeddedResource Include="UIImages\reload.png" />
+    <EmbeddedResource Include="UIImages\sad.png" />
+    <EmbeddedResource Include="UIImages\smile.png" />
+    <EmbeddedResource Include="UIImages\stop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="ReactiveUI.XamForms" Version="11.2.3" />
     <PackageReference Include="UrhoSharp" Version="1.9.67" />
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
