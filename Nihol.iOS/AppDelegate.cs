@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 using Foundation;
@@ -23,9 +24,25 @@ namespace Nihol.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            ZXing.Net.Mobile.Forms.iOS.Platform.Init();
             LoadApplication(new App());
-
+            CopyFiles("En01");
+            CopyFiles("En02");
+            CopyFiles("En03");
+            CopyFiles("En04");
             return base.FinishedLaunching(app, options);
+        }
+        
+        public void CopyFiles(string fileName)
+        {
+            var documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            var inDocuments = NSBundle.MainBundle.BundlePath;
+            var fileNameInDocuments = Path.Combine(documents, fileName + ".pdf");
+            //Directory.CreateDirectory(directoryName);
+            if (!File.Exists(fileNameInDocuments))
+            {
+                File.Copy(Path.Combine(inDocuments, "Documents" ,fileName + ".pdf"), fileNameInDocuments);
+            }
         }
     }
 }

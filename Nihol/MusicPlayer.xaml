@@ -3,13 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Nihol"
              mc:Ignorable="d"
-             x:Class="Nihol.MusicPlayer">
+             xmlns:urho="clr-namespace:Urho.Forms;assembly=UrhoSharp.Forms"
+             x:Class="Nihol.MusicPlayer"
+             
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Image Source="{local:ImageResource Nihol.UIImages.background.png}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3" Aspect="AspectFill"/>
+            <!-- Place new controls here -->
+            <Slider VerticalOptions="Center" Margin="0" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Maximum="{Binding MyDuration}" Minimum="0" Value="{Binding MyCurrentDuration}" ValueChanged="Slider_ValueChanged" DragCompleted="SSS_DragCompleted" DragStarted="SSS_DragStarted" x:Name="SSS"/>
+            <ImageButton Command="{Binding Back}" Source="{local:ImageResource Nihol.UIImages.back.png}" HorizontalOptions="Start" Grid.Column="0" Grid.Row="2" Aspect="AspectFit" VerticalOptions="Fill" BackgroundColor="#00FFFFFF" Margin="20,0,0,20"/>
+            <ImageButton Source="{local:ImageResource Nihol.UIImages.pause.png}" HorizontalOptions="Center" Grid.Column="1" Grid.Row="2" Aspect="AspectFit" VerticalOptions="Fill" BackgroundColor="#00FFFFFF" Margin="0,0,0,20" Command="{Binding PlayPause}">
+                <ImageButton.Style>
+                    <Style TargetType="ImageButton">
+                        <Setter Property="Source" Value="{local:ImageResource Nihol.UIImages.pause.png}"/>
+                        <Style.Triggers>
+                            <DataTrigger TargetType="ImageButton" Binding="{Binding MusicIsPlaying}" Value="False">
+                                <Setter Property="Source" Value="{local:ImageResource Nihol.UIImages.play.png}"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ImageButton.Style>
+            </ImageButton>
+            <ImageButton Source="{local:ImageResource Nihol.UIImages.stop.png}" HorizontalOptions="End" Grid.Column="2" Grid.Row="2" Aspect="AspectFit" VerticalOptions="Fill" BackgroundColor="#00FFFFFF" Margin="0,0,20,20" Command="{Binding Stop}"/>
+            <Frame CornerRadius="20" Padding="0" Margin="20" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" HasShadow="False">
+                <urho:UrhoSurface x:Name="MyUrhoSurface" VerticalOptions="FillAndExpand"/>
+            </Frame>
+            
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -33,6 +33,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>D:\NiholDocs\NiholKey</AndroidSigningKeyStore>
+    <AndroidSigningKeyAlias>niholKey</AndroidSigningKeyAlias>
+    <AndroidSigningStorePass>diaglessa</AndroidSigningStorePass>
+    <AndroidSigningKeyPass>diaglessa</AndroidSigningKeyPass>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,13 +64,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ReactiveUI.XamForms">
-      <Version>11.2.3</Version>
+      <Version>11.3.8</Version>
     </PackageReference>
-    <PackageReference Include="UrhoSharp">
+    <PackageReference Include="UrhoSharp.Forms">
       <Version>1.9.67</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer">
+      <Version>1.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
+    <PackageReference Include="ZXing.Net.Mobile">
+      <Version>3.0.0-beta5</Version>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net.Mobile.Forms">
+      <Version>3.0.0-beta5</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -100,5 +118,598 @@
       <Name>Nihol</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Scenes\tosura01.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Scenes\tosura02.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Techniques\DiffAlphaMask.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1_1_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1_1_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1_2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1_2_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1_3_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1_3_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1_4_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1_4_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2_1_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2_1_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2_2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2_2_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2_3_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2_3_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2_4_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2_4_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3_1_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3_1_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3_2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3_2_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3_3_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3_3_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3_4_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3_4_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4_1_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4_1_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4_2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4_2_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4_3_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4_3_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4_4_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4_4_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_0.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_1_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_1_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_1_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_1_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_1_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_1_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_1_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_1_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_2_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_2_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_2_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_2_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_2_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_2_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_2_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_2_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_3_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_3_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_3_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_3_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_3_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_3_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_3_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_3_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_4_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_4_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_4_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_4_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_4_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_4_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_4_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b1_4_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_0.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_1_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_1_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_1_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_1_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_1_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_1_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_1_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_1_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_2_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_2_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_2_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_2_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_2_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_2_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_2_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_2_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_3_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_3_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_3_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_3_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_3_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_3_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_3_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_3_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_4_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_4_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_4_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_4_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_4_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_4_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_4_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b2_4_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_0.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_1_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_1_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_1_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_1_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_1_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_1_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_1_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_1_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_2_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_2_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_2_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_2_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_2_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_2_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_2_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_2_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_3_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_3_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_3_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_3_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_3_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_3_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_3_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_3_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_4_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_4_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_4_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_4_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_4_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_4_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_4_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b3_4_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_0.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_1_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_1_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_1_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_1_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_1_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_1_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_1_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_1_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_2_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_2_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_2_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_2_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_2_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_2_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_2_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_2_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_3_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_3_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_3_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_3_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_3_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_3_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_3_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_3_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_4_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_4_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_4_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_4_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_4_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_4_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_4_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\book\b4_4_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1p1hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1p2hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1p3hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b1p4hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Materials\background.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2p1hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2p2hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2p3hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b2p4hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3p1hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3p2hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3p3hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b3p4hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Scenes\tosura03.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Scenes\tosura04.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4p1hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4p2hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4p3hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Textures\book\b4p4hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\MyIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\MyIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\MyIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\MyIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\MyIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties XamarinHotReloadUnhandledDeviceExceptionNiholAndroidHideInfoBar="True" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

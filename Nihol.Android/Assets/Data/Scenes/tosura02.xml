@@ -1,0 +1,634 @@
+<?xml version="1.0"?>
+<scene id="1">
+	<attribute name="Name" value="" />
+	<attribute name="Time Scale" value="1" />
+	<attribute name="Smoothing Constant" value="50" />
+	<attribute name="Snap Threshold" value="5" />
+	<attribute name="Elapsed Time" value="1.06859" />
+	<attribute name="Next Replicated Node ID" value="89" />
+	<attribute name="Next Replicated Component ID" value="66" />
+	<attribute name="Next Local Node ID" value="16777238" />
+	<attribute name="Next Local Component ID" value="16777480" />
+	<attribute name="Variables" />
+	<attribute name="Variable Names" value="" />
+	<component type="Octree" id="1" />
+	<component type="DebugRenderer" id="2" />
+	<node id="2">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Cam" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 8 -12" />
+		<attribute name="Rotation" value="0.961262 0.275637 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Camera" id="4">
+			<attribute name="Near Clip" value="0.28" />
+			<attribute name="Far Clip" value="25" />
+			<attribute name="FOV" value="60" />
+			<attribute name="Aspect Ratio" value="1.77778" />
+			<attribute name="LOD Bias" value="1.45" />
+		</component>
+		<component type="Light" id="6">
+			<attribute name="Light Type" value="Directional" />
+		</component>
+		<node id="88">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="Plane" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 3 22" />
+			<attribute name="Rotation" value="0.785317 -0.619094 0 0" />
+			<attribute name="Scale" value="40 1 40" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="65">
+				<attribute name="Model" value="Model;Models/Plane.mdl" />
+				<attribute name="Material" value="Material;Materials/background.xml" />
+			</component>
+		</node>
+	</node>
+	<node id="6">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Page1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<node id="4">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="Page" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 0.01 -2.295" />
+			<attribute name="Rotation" value="-4.37114e-08 0 1 -0" />
+			<attribute name="Scale" value="6.62 1 4.59" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="8">
+				<attribute name="Model" value="Model;Models/Plane.mdl" />
+				<attribute name="Material" value="Material;Materials/book/b2_0.xml" />
+			</component>
+			<node id="5">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="oblOborot" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="3.72907e-10 -0.00633937 -4.75342e-11" />
+				<attribute name="Rotation" value="1.94707e-07 0 0 -1" />
+				<attribute name="Scale" value="1 1 1" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="9">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_1_t.xml" />
+				</component>
+			</node>
+		</node>
+		<node id="14">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="H1" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.265519 8.17705e-07 -0.240505" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="12">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="H1L" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-0.0492337 -0.431675 0.0044837" />
+				<attribute name="Rotation" value="0.705268 -0.70894 0 -0" />
+				<attribute name="Scale" value="1.88 1 0.85" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="14">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_1_t_h1.xml" />
+				</component>
+				<node id="13">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="H1O" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0.0174742" />
+					<attribute name="Rotation" value="-1.50984e-07 1 0 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="15">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_1_t_h1mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+		<node id="15">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="H2" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-1.24949 -0.0176827 -1.89678" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="16">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="H2L" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-0.0100006 -0.399052 0.0124987" />
+				<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+				<attribute name="Scale" value="0.28 1 0.85" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="17">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_1_t_h2.xml" />
+				</component>
+				<node id="17">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="H2O" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="-4.37114e-08 1.93597e-15 4.42899e-08 1" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="18">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_1_t_h2mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+	</node>
+	<node id="9">
+		<attribute name="Is Enabled" value="false" />
+		<attribute name="Name" value="Page2" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<node id="18">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="V" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.157537 0 -0.85" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="10">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="VL" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0.0265353 1.62064 0" />
+				<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+				<attribute name="Scale" value="4.69 1 3.23" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="12">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_1_t_v1.xml" />
+					<attribute name="Occlusion LOD Level" value="0" />
+				</component>
+				<node id="11">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="VO" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="-2.50606e-07 9.83569e-08 -3.35879e-07 1" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="13">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_1_t_v1mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+		<node id="7">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="Page" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 -0.01 -2.295" />
+			<attribute name="Rotation" value="3.13916e-07 0 0 -1" />
+			<attribute name="Scale" value="6.62 1 4.59" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="10">
+				<attribute name="Model" value="Model;Models/Plane.mdl" />
+				<attribute name="Material" value="Material;Materials/book/b2_2_t.xml" />
+			</component>
+			<node id="8">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="P2O" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-2.64116e-10 -0.01 -1.90464e-10" />
+				<attribute name="Rotation" value="-4.37114e-08 -4.59315e-15 -1.05079e-07 1" />
+				<attribute name="Scale" value="0.999921 1 1.00016" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="11">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_1_b.xml" />
+				</component>
+			</node>
+		</node>
+		<node id="43">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="H1" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.702595 -5.67601e-08 -0.769854" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="44">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="H1L" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0.00617814 -0.343295 0.00408481" />
+				<attribute name="Rotation" value="0.705268 -0.70894 0 -0" />
+				<attribute name="Scale" value="0.7 1 0.68" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="35">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_2_t_h1.xml" />
+				</component>
+				<node id="45">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="H1O" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="1.91069e-15 1 -4.37114e-08 -4.37114e-08" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="36">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_1_t_h1mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+		<node id="46">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="H2" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.30769 6.61051e-08 -3.80487" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="47">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="H2L" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 -0.348436 0.000327447" />
+				<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+				<attribute name="Scale" value="0.2 1 0.68" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="37">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_2_t_h2.xml" />
+				</component>
+				<node id="48">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="H2O" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="-4.37114e-08 1.93597e-15 4.42899e-08 1" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="38">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_2_t_h2mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+	</node>
+	<node id="49">
+		<attribute name="Is Enabled" value="false" />
+		<attribute name="Name" value="Page3" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<node id="50">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="V" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.103575 0 -0.678986" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="51">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="VL" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-0.023945 1.9057 -2.38419e-07" />
+				<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+				<attribute name="Scale" value="3.96 1 3.79" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="39">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_2_t_v1.xml" />
+					<attribute name="Occlusion LOD Level" value="0" />
+				</component>
+				<node id="52">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="Vo" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="7.90754e-07 -2.80932e-21 -3.55271e-15 -1" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="40">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_2_t_v1mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+		<node id="53">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="Page" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 -0.01 -2.295" />
+			<attribute name="Rotation" value="5.52335e-07 6.43003e-17 1.16415e-10 -1" />
+			<attribute name="Scale" value="6.62 1 4.59" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="41">
+				<attribute name="Model" value="Model;Models/Plane.mdl" />
+				<attribute name="Material" value="Material;Materials/book/b2_3_t.xml" />
+			</component>
+			<node id="54">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="P2O" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-1.69887e-10 -0.0171353 9.22939e-11" />
+				<attribute name="Rotation" value="-4.37114e-08 -4.59315e-15 -1.05079e-07 1" />
+				<attribute name="Scale" value="0.999921 1 1.00016" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="42">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_2_b.xml" />
+				</component>
+			</node>
+		</node>
+		<node id="58">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="H2" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.0783738 2.99963e-08 -3.64642" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="59">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="H2L" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 -0.349328 0.0091338" />
+				<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+				<attribute name="Scale" value="0.26 1 0.68" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="45">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_3_t_h2.xml" />
+				</component>
+				<node id="60">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="H2O" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="-4.37114e-08 0 -0 1" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="46">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_3_t_h2mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+		<node id="73">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="H1" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.0640747 1.21299e-08 -3.63696" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="74">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="H2L" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-0.0160835 -0.344383 -0.00497534" />
+				<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+				<attribute name="Scale" value="0.26 1 0.68" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="55">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_3_t_h1.xml" />
+				</component>
+				<node id="75">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="H2O" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="-4.37114e-08 0 -0 1" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="56">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_3_t_h1mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+	</node>
+	<node id="61">
+		<attribute name="Is Enabled" value="false" />
+		<attribute name="Name" value="Page4" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<node id="62">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="V" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.111153 0 -0.668555" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="63">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="VL" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-0.0486357 1.85257 -1.19209e-07" />
+				<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+				<attribute name="Scale" value="3.79 1 3.69" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="47">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_3_t_v1.xml" />
+					<attribute name="Occlusion LOD Level" value="0" />
+				</component>
+				<node id="64">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="Vo" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="7.90754e-07 -2.80932e-21 -3.55271e-15 -1" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="48">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_3_t_v1mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+		<node id="65">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="Page" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 -0.01 -2.295" />
+			<attribute name="Rotation" value="5.52335e-07 0 0 -1" />
+			<attribute name="Scale" value="6.62 1 4.59" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="49">
+				<attribute name="Model" value="Model;Models/Plane.mdl" />
+				<attribute name="Material" value="Material;Materials/book/b2_4_t.xml" />
+			</component>
+			<node id="66">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="P2O" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-2.64116e-10 -0.02 -1.90464e-10" />
+				<attribute name="Rotation" value="-4.37114e-08 -4.59315e-15 -1.05079e-07 1" />
+				<attribute name="Scale" value="0.999921 1 1.00016" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="50">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_3_b.xml" />
+				</component>
+			</node>
+		</node>
+		<node id="67">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="H1" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-1.02573 2.15946e-06 -3.63237" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1e-06" />
+			<attribute name="Variables" />
+			<node id="68">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="H1L" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-0.0492337 -0.362353 -360.522" />
+				<attribute name="Rotation" value="0.705268 -0.70894 0 -0" />
+				<attribute name="Scale" value="0.25 1 0.67" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="51">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_4_t_h1.xml" />
+				</component>
+				<node id="69">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="H1O" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 -0.01 0.0174742" />
+					<attribute name="Rotation" value="1.91069e-15 1 -4.37114e-08 -4.37114e-08" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="52">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_4_t_h1mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+		<node id="70">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="H2" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.823785 1.69613e-07 -2.51815" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="71">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="H2L" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 -0.413602 -0.00706806" />
+				<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+				<attribute name="Scale" value="0.18 1 0.67" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="53">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_4_t_h2.xml" />
+				</component>
+				<node id="72">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="H2O" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="-4.37114e-08 1.93597e-15 4.42899e-08 1" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="54">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_4_t_h2mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+	</node>
+	<node id="76">
+		<attribute name="Is Enabled" value="false" />
+		<attribute name="Name" value="Page5" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<node id="77">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="V" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.0500248 0 -0.693394" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="78">
+				<attribute name="Is Enabled" value="false" />
+				<attribute name="Name" value="VL" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0.0358243 1.80555 -1.19209e-07" />
+				<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+				<attribute name="Scale" value="4.34 1 3.64" />
+				<attribute name="Variables" />
+				<component type="StaticModel" id="57">
+					<attribute name="Model" value="Model;Models/Plane.mdl" />
+					<attribute name="Material" value="Material;Materials/book/b2_4_t_v1.xml" />
+					<attribute name="Occlusion LOD Level" value="0" />
+				</component>
+				<node id="79">
+					<attribute name="Is Enabled" value="false" />
+					<attribute name="Name" value="Vo" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="9.09963e-07 0 0 -1" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="58">
+						<attribute name="Model" value="Model;Models/Plane.mdl" />
+						<attribute name="Material" value="Material;Materials/book/b2_4_t_v1mb.xml" />
+					</component>
+				</node>
+			</node>
+		</node>
+		<node id="81">
+			<attribute name="Is Enabled" value="false" />
+			<attribute name="Name" value="Page" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-1.74845e-09 -0.01 -2.295" />
+			<attribute name="Rotation" value="1 -2.08891e-07 0 0" />
+			<attribute name="Scale" value="6.61948 1 4.59073" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="60">
+				<attribute name="Model" value="Model;Models/Plane.mdl" />
+				<attribute name="Material" value="Material;Materials/book/b2_4_b.xml" />
+			</component>
+		</node>
+	</node>
+</scene>

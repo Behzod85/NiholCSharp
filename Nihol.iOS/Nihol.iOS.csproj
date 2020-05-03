@@ -27,6 +27,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <OptimizePNGs>false</OptimizePNGs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -51,6 +52,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>None</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
+    <OptimizePNGs>false</OptimizePNGs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -62,55 +64,77 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Documents\En01.pdf" />
+    <BundleResource Include="Resources\Documents\En02.pdf" />
+    <BundleResource Include="Resources\Documents\En03.pdf" />
+    <BundleResource Include="Resources\Documents\En04.pdf" />
   </ItemGroup>
   <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20@2x1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29@2x1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40@2x1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iTunesArtwork@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
@@ -124,13 +148,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ReactiveUI.XamForms">
-      <Version>11.2.3</Version>
+      <Version>11.3.8</Version>
     </PackageReference>
-    <PackageReference Include="UrhoSharp">
+    <PackageReference Include="UrhoSharp.Forms">
       <Version>1.9.67</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer">
+      <Version>1.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
+    <PackageReference Include="ZXing.Net.Mobile">
+      <Version>3.0.0-beta5</Version>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net.Mobile.Forms">
+      <Version>3.0.0-beta5</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -138,5 +171,578 @@
       <Project>{4F0A48B6-57B5-49E8-9D77-74FA19EAB120}</Project>
       <Name>Nihol</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\background.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_0.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_1_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_1_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_1_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_1_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_1_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_1_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_1_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_1_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_2_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_2_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_2_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_2_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_2_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_2_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_2_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_2_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_3_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_3_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_3_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_3_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_3_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_3_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_3_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_3_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_4_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_4_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_4_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_4_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_4_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_4_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_4_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b1_4_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_0.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_1_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_1_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_1_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_1_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_1_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_1_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_1_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_1_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_2_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_2_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_2_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_2_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_2_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_2_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_2_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_2_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_3_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_3_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_3_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_3_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_3_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_3_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_3_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_3_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_4_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_4_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_4_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_4_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_4_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_4_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_4_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b2_4_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_0.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_1_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_1_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_1_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_1_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_1_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_1_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_1_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_1_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_2_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_2_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_2_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_2_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_2_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_2_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_2_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_2_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_3_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_3_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_3_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_3_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_3_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_3_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_3_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_3_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_4_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_4_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_4_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_4_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_4_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_4_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_4_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b3_4_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_0.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_1_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_1_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_1_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_1_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_1_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_1_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_1_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_1_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_2_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_2_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_2_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_2_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_2_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_2_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_2_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_2_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_3_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_3_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_3_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_3_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_3_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_3_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_3_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_3_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_4_b.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_4_t.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_4_t_h1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_4_t_h1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_4_t_h2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_4_t_h2mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_4_t_v1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Materials\book\b4_4_t_v1mb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Scenes\tosura01.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Scenes\tosura02.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Scenes\tosura03.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Scenes\tosura04.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Techniques\DiffAlphaMask.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1_1_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1_1_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1_2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1_2_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1_3_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1_3_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1_4_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1_4_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1p1hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1p2hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1p3hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b1p4hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2_1_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2_1_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2_2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2_2_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2_3_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2_3_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2_4_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2_4_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2p1hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2p2hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2p3hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b2p4hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3_1_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3_1_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3_2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3_2_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3_3_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3_3_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3_4_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3_4_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3p1hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3p2hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3p3hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b3p4hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4_1_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4_1_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4_2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4_2_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4_3_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4_3_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4_4_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4_4_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4p1hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4p2hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4p3hv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Data\Textures\book\b4p4hv.png" />
   </ItemGroup>
 </Project>
