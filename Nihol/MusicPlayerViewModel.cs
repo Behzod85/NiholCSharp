@@ -38,7 +38,8 @@ namespace Nihol
             set { this.RaiseAndSetIfChanged(ref _MyCurrentDuration, value); }
         }
 
-        
+
+
 
 
 

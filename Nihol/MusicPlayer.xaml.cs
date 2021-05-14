@@ -29,12 +29,22 @@ namespace Nihol
 
         async void StartUrhoApp()
         {
+            if (BookNumber == "5" || BookNumber == "6" || BookNumber == "7" || BookNumber == "8" || BookNumber == "9")
+            {
+                MyImageFrame.IsVisible = true;
+                MyUrhoFrame.IsVisible = false;
+                MyIMG.Source = ImageSource.FromResource("Nihol.UIImages.tosura0" + BookNumber + ".jpg");
+                return;
+            }
+            MyUrhoFrame.IsVisible = true;
+            MyImageFrame.IsVisible = false;
             //urhoApp.BookNumber = BookNumber;
             urhoApp = await MyUrhoSurface.Show<Charts>(new ApplicationOptions(assetsFolder: "Data") { Orientation = ApplicationOptions.OrientationType.LandscapeAndPortrait });
 
-            urhoApp.BookNumber = BookNumber;
-            //urhoApp.Start2();
-            Urho.Application.InvokeOnMain(() => urhoApp.Start2());
+                urhoApp.BookNumber = BookNumber;
+                //urhoApp.Start2();
+                Urho.Application.InvokeOnMain(() => urhoApp.Start2());
+
         }
         protected override void OnDisappearing()
         {
@@ -59,19 +69,21 @@ namespace Nihol
             //Urho.Application.InvokeOnMain(() => urhoApp.ToPage(val));
             //if (SSS.Value != musicPlayer.MyDuration)
             //    musicPlayer.Seek(SSS.Value);
-            var p = (musicPlayer.MyCurrentDuration + 0.1 )* 4.0 / musicPlayer.MyDuration;
-            int page = (int)Math.Ceiling(p);
-            if (page > 4) page = 4;
-            if(page == nextPage)
-            {
-                nextPage = page + 1;
-                Urho.Application.InvokeOnMain(() => urhoApp.OpenPage());
-            }
-            if(musicPlayer.MyCurrentDuration == 0)
-            {
-                Urho.Application.InvokeOnMain(() => urhoApp.ToPage(1));
-                nextPage = 2;
-            }
+            if (BookNumber == "5" || BookNumber == "6" || BookNumber == "7" || BookNumber == "8" || BookNumber == "9")
+                return;
+            var p = (musicPlayer.MyCurrentDuration + 0.1) * 4.0 / musicPlayer.MyDuration;
+                int page = (int)Math.Ceiling(p);
+                if (page > 4) page = 4;
+                if (page == nextPage)
+                {
+                    nextPage = page + 1;
+                    Urho.Application.InvokeOnMain(() => urhoApp.OpenPage());
+                }
+                if (musicPlayer.MyCurrentDuration == 0)
+                {
+                    Urho.Application.InvokeOnMain(() => urhoApp.ToPage(1));
+                    nextPage = 2;
+                }
             //if (p == 0) Urho.Application.InvokeOnMain(() => urhoApp.ToPage(1));
         }
 
@@ -83,12 +95,13 @@ namespace Nihol
                 //musicPlayer.MyCurrentDuration = SSS.Value;
                 musicPlayer.Seek(SSS.Value);
             }
-
+            if (BookNumber == "5" || BookNumber == "6" || BookNumber == "7" || BookNumber == "8" || BookNumber == "9")
+                return;
             var p = (musicPlayer.MyCurrentDuration + 0.1) * 4.0 / musicPlayer.MyDuration;
-            int page = (int)Math.Ceiling(p);
-            if (page > 4) page = 4;
-            Urho.Application.InvokeOnMain(() => urhoApp.ToPage(page));
-            nextPage = page + 1;
+                int page = (int)Math.Ceiling(p);
+                if (page > 4) page = 4;
+                Urho.Application.InvokeOnMain(() => urhoApp.ToPage(page));
+                nextPage = page + 1;
         }
 
         private void SSS_DragStarted(object sender, EventArgs e)

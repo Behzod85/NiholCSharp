@@ -24,7 +24,7 @@ namespace Nihol
         }
         
 
-        private List<string> _ExistingBooks = new List<string>() {"ToSuRaEn01", "ToSuRaEn02", "ToSuRaEn03", "ToSuRaEn04", "ToSuRaUz01", "ToSuRaUz02", "ToSuRaUz03", "ToSuRaUz04", "ToSuRaRu01", "ToSuRaRu02", "ToSuRaRu03", "ToSuRaRu04", "ToSuRaKg01", "ToSuRaKg02", "ToSuRaKg03", "ToSuRaKg04", "ToSuRaKz01", "ToSuRaKz02", "ToSuRaKz03", "ToSuRaKz04", "ToSuRaQq01", "ToSuRaQq02", "ToSuRaQq03", "ToSuRaQq04", "ToSuRaTj01", "ToSuRaTj02", "ToSuRaTj03", "ToSuRaTj04", "ToSuRaTm01", "ToSuRaTm02", "ToSuRaTm03", "ToSuRaTm04"};
+        private List<string> _ExistingBooks = new List<string>() {"ToSuRaEn01", "ToSuRaEn02", "ToSuRaEn03", "ToSuRaEn04", "ToSuRaEn05", "ToSuRaEn06", "ToSuRaEn07", "ToSuRaEn08", "ToSuRaEn09", "ToSuRaUz01", "ToSuRaUz02", "ToSuRaUz03", "ToSuRaUz04", "ToSuRaUz05", "ToSuRaUz06", "ToSuRaUz07", "ToSuRaUz08", "ToSuRaUz09", "ToSuRaRu01", "ToSuRaRu02", "ToSuRaRu03", "ToSuRaRu04", "ToSuRaRu05", "ToSuRaRu06", "ToSuRaRu07", "ToSuRaRu08", "ToSuRaRu09", "ToSuRaKg01", "ToSuRaKg02", "ToSuRaKg03", "ToSuRaKg04", "ToSuRaKz01", "ToSuRaKz02", "ToSuRaKz03", "ToSuRaKz04", "ToSuRaQq01", "ToSuRaQq02", "ToSuRaQq03", "ToSuRaQq04", "ToSuRaTj01", "ToSuRaTj02", "ToSuRaTj03", "ToSuRaTj04", "ToSuRaTm01", "ToSuRaTm02", "ToSuRaTm03", "ToSuRaTm04"};
 
         public List<string> ExistingBooks
         {

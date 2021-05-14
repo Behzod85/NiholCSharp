@@ -15,6 +15,11 @@
     <None Remove="lowmp3\tosuraen02.mp3" />
     <None Remove="lowmp3\tosuraen03.mp3" />
     <None Remove="lowmp3\tosuraen04.mp3" />
+    <None Remove="lowmp3\tosuraen05.mp3" />
+    <None Remove="lowmp3\tosuraen06.mp3" />
+    <None Remove="lowmp3\tosuraen07.mp3" />
+    <None Remove="lowmp3\tosuraen08.mp3" />
+    <None Remove="lowmp3\tosuraen09.mp3" />
     <None Remove="lowmp3\tosurakg01.mp3" />
     <None Remove="lowmp3\tosurakg02.mp3" />
     <None Remove="lowmp3\tosurakg03.mp3" />
@@ -31,6 +36,11 @@
     <None Remove="lowmp3\tosuraru02.mp3" />
     <None Remove="lowmp3\tosuraru03.mp3" />
     <None Remove="lowmp3\tosuraru04.mp3" />
+    <None Remove="lowmp3\tosuraru05.mp3" />
+    <None Remove="lowmp3\tosuraru06.mp3" />
+    <None Remove="lowmp3\tosuraru07.mp3" />
+    <None Remove="lowmp3\tosuraru08.mp3" />
+    <None Remove="lowmp3\tosuraru09.mp3" />
     <None Remove="lowmp3\tosuratj01.mp3" />
     <None Remove="lowmp3\tosuratj02.mp3" />
     <None Remove="lowmp3\tosuratj03.mp3" />
@@ -43,6 +53,11 @@
     <None Remove="lowmp3\tosurauz02.mp3" />
     <None Remove="lowmp3\tosurauz03.mp3" />
     <None Remove="lowmp3\tosurauz04.mp3" />
+    <None Remove="lowmp3\tosurauz05.mp3" />
+    <None Remove="lowmp3\tosurauz06.mp3" />
+    <None Remove="lowmp3\tosurauz07.mp3" />
+    <None Remove="lowmp3\tosurauz08.mp3" />
+    <None Remove="lowmp3\tosurauz09.mp3" />
     <None Remove="UIImages\Back.png" />
     <None Remove="UIImages\Background.png" />
     <None Remove="UIImages\Idle.png" />
@@ -54,6 +69,19 @@
     <None Remove="UIImages\Sad.png" />
     <None Remove="UIImages\Smile.png" />
     <None Remove="UIImages\Stop.png" />
+    <None Remove="UIImages\tosura05.jpg" />
+    <None Remove="UIImages\tosura06.jpg" />
+    <None Remove="UIImages\tosura07.jpg" />
+    <None Remove="UIImages\tosura08.jpg" />
+    <None Remove="UIImages\tosura09.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="lowmp3\tosuraen05.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraen06.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraen07.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraen08.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraen09.mp3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -77,6 +105,11 @@
     <EmbeddedResource Include="lowmp3\tosuraru02.mp3" />
     <EmbeddedResource Include="lowmp3\tosuraru03.mp3" />
     <EmbeddedResource Include="lowmp3\tosuraru04.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraru05.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraru06.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraru07.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraru08.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraru09.mp3" />
     <EmbeddedResource Include="lowmp3\tosuratj01.mp3" />
     <EmbeddedResource Include="lowmp3\tosuratj02.mp3" />
     <EmbeddedResource Include="lowmp3\tosuratj03.mp3" />
@@ -89,6 +122,11 @@
     <EmbeddedResource Include="lowmp3\tosurauz02.mp3" />
     <EmbeddedResource Include="lowmp3\tosurauz03.mp3" />
     <EmbeddedResource Include="lowmp3\tosurauz04.mp3" />
+    <EmbeddedResource Include="lowmp3\tosurauz05.mp3" />
+    <EmbeddedResource Include="lowmp3\tosurauz06.mp3" />
+    <EmbeddedResource Include="lowmp3\tosurauz07.mp3" />
+    <EmbeddedResource Include="lowmp3\tosurauz08.mp3" />
+    <EmbeddedResource Include="lowmp3\tosurauz09.mp3" />
     <EmbeddedResource Include="UIImages\back.png" />
     <EmbeddedResource Include="UIImages\background.png" />
     <EmbeddedResource Include="UIImages\idle.png" />
@@ -100,6 +138,11 @@
     <EmbeddedResource Include="UIImages\sad.png" />
     <EmbeddedResource Include="UIImages\smile.png" />
     <EmbeddedResource Include="UIImages\stop.png" />
+    <EmbeddedResource Include="UIImages\tosura05.jpg" />
+    <EmbeddedResource Include="UIImages\tosura06.jpg" />
+    <EmbeddedResource Include="UIImages\tosura07.jpg" />
+    <EmbeddedResource Include="UIImages\tosura08.jpg" />
+    <EmbeddedResource Include="UIImages\tosura09.jpg" />
   </ItemGroup>
 
   <ItemGroup>

@@ -39,9 +39,14 @@
                 </ImageButton.Style>
             </ImageButton>
             <ImageButton Source="{local:ImageResource Nihol.UIImages.stop.png}" HorizontalOptions="End" Grid.Column="2" Grid.Row="2" Aspect="AspectFit" VerticalOptions="Fill" BackgroundColor="#00FFFFFF" Margin="0,0,20,20" Command="{Binding Stop}"/>
-            <Frame CornerRadius="20" Padding="0" Margin="20" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" HasShadow="False">
+            <Frame x:Name="MyImageFrame" IsVisible="true" CornerRadius="20" Padding="0" Margin="20" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" HasShadow="False">
+                <Image x:Name="MyIMG" Aspect="AspectFill"/>
+            </Frame>
+            <Frame x:Name="MyUrhoFrame" CornerRadius="20" Padding="0" Margin="20" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" HasShadow="False">
                 <urho:UrhoSurface x:Name="MyUrhoSurface" VerticalOptions="FillAndExpand"/>
             </Frame>
+            
+
             
         </Grid>
     </ContentPage.Content>
