@@ -77,18 +77,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="lowmp3\tosuraen01.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraen02.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraen03.mp3" />
+    <EmbeddedResource Include="lowmp3\tosuraen04.mp3" />
     <EmbeddedResource Include="lowmp3\tosuraen05.mp3" />
     <EmbeddedResource Include="lowmp3\tosuraen06.mp3" />
     <EmbeddedResource Include="lowmp3\tosuraen07.mp3" />
     <EmbeddedResource Include="lowmp3\tosuraen08.mp3" />
     <EmbeddedResource Include="lowmp3\tosuraen09.mp3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="lowmp3\tosuraen01.mp3" />
-    <EmbeddedResource Include="lowmp3\tosuraen02.mp3" />
-    <EmbeddedResource Include="lowmp3\tosuraen03.mp3" />
-    <EmbeddedResource Include="lowmp3\tosuraen04.mp3" />
     <EmbeddedResource Include="lowmp3\tosurakg01.mp3" />
     <EmbeddedResource Include="lowmp3\tosurakg02.mp3" />
     <EmbeddedResource Include="lowmp3\tosurakg03.mp3" />
